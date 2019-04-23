@@ -1,0 +1,40 @@
+#+TITLE:     Worklog: Lemonada GF Mastering
+#+AUTHOR:    Eli H
+#+EMAIL:     elih@member.fsf.org
+#+LANGUAGE:  en
+
+This file is formatted for use with [[https://www.gnu.org/software/emacs/][Emacs Org-mode]].
+
+* Org-mode is available for other editors.
+  VsCode: https://github.com/vscode-org-mode/vscode-org-mode
+  Vim:    https://github.com/jceb/vim-orgmode
+
+* Lemonada GF Mastering Worklog
+
+PR: None yet
+Status: Working on the first PR
+
+** FontBakery Status
+*** Roman
+**** Fails 01 ****
+******* :: check/integer_ppem_if_hinted
+	This needs these steps:
+	mkdir ttx && ttx -d ttx -s Changa-VF.ttf
+	v ttx/Changa-VF._h_e_a_d.ttx
+	ttx ttx/Changa-VF.ttx
+	cp ttx/Changa-VF.ttf Changa-VF.ttf
+	fontbakery check-googlefonts -l WARN Changa-VF.ttf --ghmarkdown fb.md
+**** Warns 01 ****
+******* :: check/points_out_of_bounds
+	NBD
+** TODOs
+*** TODO [#A] Update PR
+** Build Helpers
+*** FontBakery
+*** Addfont
+*** Build Commands
+*** Build Info
+** Post Build Steps
+*** Glyph Rename Script
+*** Fix Fsselection
+    gftools fix-fsselection Changa-Regular.ttf --autofix

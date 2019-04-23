@@ -9,5 +9,6 @@
 # Names should be added to this file as:
 # Name <email address>
 
-Mohamed Gaber <gaber@gaberism.net> 
+Mohamed Gaber <gaber@gaberism.net>
 Eduardo Rodríguez Tunni <edu@tipo.net.ar>
+Eli Heuer <elih@member.fsf.org>
