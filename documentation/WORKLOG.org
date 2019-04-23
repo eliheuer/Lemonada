@@ -5,7 +5,7 @@
 
 This file is formatted for use with [[https://www.gnu.org/software/emacs/][Emacs Org-mode]].
 
-* Org-mode is available for other editors.
+* Org-mode is available for other editors
   VsCode: https://github.com/vscode-org-mode/vscode-org-mode
   Vim:    https://github.com/jceb/vim-orgmode
 
@@ -13,20 +13,54 @@ This file is formatted for use with [[https://www.gnu.org/software/emacs/][Emacs
 
 PR: None yet
 Status: Working on the first PR
+** BUILD STEPS
+   ./BUILD.sh
+       #!/bin/sh
+       python3 sources/BUILD.py \
+       --ttfautohint "-v --stem-width-mode=qsq" \
+       --googlefonts ~/Google/fonts/ofl/lemonada \
 
 ** FontBakery Status
 *** Roman
-**** Fails 01 ****
-******* :: check/integer_ppem_if_hinted
-	This needs these steps:
-	mkdir ttx && ttx -d ttx -s Changa-VF.ttf
-	v ttx/Changa-VF._h_e_a_d.ttx
-	ttx ttx/Changa-VF.ttx
-	cp ttx/Changa-VF.ttf Changa-VF.ttf
-	fontbakery check-googlefonts -l WARN Changa-VF.ttf --ghmarkdown fb.md
-**** Warns 01 ****
-******* :: check/points_out_of_bounds
-	NBD
+**** Fails 05 ****
+***** DONE :: check/os2_metrics_match_hhea
+      CLOSED: [2019-04-23 Tue 15:18]
+      ACTION LOG -- Fixing this in the source:
+        1. Changed typoDescender to -653 from 653 on all masters
+        2. Reordered parameters
+
+***** DONE :: check/integer_ppem_if_hinted
+      CLOSED: [2019-04-23 Tue 17:21]
+      ACTION LOG -- This needs these steps:
+          mkdir ttx && ttx -d ttx -s Lemonada-Regular.ttf
+	  v ttx/Changa-VF._h_e_a_d.ttx
+	  ttx ttx/Changa-VF.ttx
+	  cp ttx/Changa-VF.ttf Changa-VF.ttf
+	  fontbakery check-googlefonts -l WARN Changa-VF.ttf --ghmarkdown fb.md
+
+***** DONE :: check/metadata/nameid/copyright
+      Changed to:
+      Copyright 2011 The Lemonada Project Authors (https://github.com/Gue3bara/Lemonada)
+
+***** :: check/production_encoded_glyphs
+      Glyph is from Unicode block: Private Use Area -- U+E000 to U+F8FF
+      NBD: Won't fix for now
+***** :: check/metadata/valid_filename_values
+      NBD: Won't fix
+***** :: check/canonical_filename
+      NBD: Won't fix
+***** :: check/metadata/has_regular
+      NBD: Won't fix
+***** :: check/description/max_length
+      This should be fixed... but maybe make the PR anyway.
+**** Warns 03 ****
+***** :: check/points_out_of_bounds
+      NBD: Won't fix for now
+***** :: check/production_glyphs_similarity
+      NBD: Wont fix for now
+***** :: check/unitsperem_strict
+      NBD: Wont fix for now
+      
 ** TODOs
 *** TODO [#A] Update PR
 ** Build Helpers

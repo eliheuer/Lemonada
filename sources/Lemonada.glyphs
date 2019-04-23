@@ -1,8 +1,5 @@
 {
-.appVersion = "1147";
-DisplayStrings = (
-"/Cacute/Ccaron Ç/Ccircumflex/Cdotaccent/Gbreve/Gcircumflex/Gcommaaccent/Gdotaccent/IJ Í/Ibreve ÎÏ/Idotaccent/Idotbelow Ì/Ihookabove/Imacron/Iogonek/Itilde/Nacute/Ncaron/Ncommaaccent ÑÚ/Ubreve ÛÜ/Udotbelow Ù/Uhookabove/Uhorn/Uhornacute/Uhorndotbelow/Uhorngrave/Uhornhookabove/Uhorntilde/Uhungarumlaut/Umacron/Uogonek/Uring/Utilde/aeacute"
-);
+.appVersion = "1231";
 classes = (
 {
 code = "";
@@ -472,18 +469,6 @@ ascender = 1345;
 capHeight = 710;
 customParameters = (
 {
-name = typoAscender;
-value = 1345;
-},
-{
-name = typoDescender;
-value = 653;
-},
-{
-name = typoLineGap;
-value = 0;
-},
-{
 name = hheaAscender;
 value = 1345;
 },
@@ -496,12 +481,24 @@ name = hheaLineGap;
 value = 0;
 },
 {
-name = winDescent;
-value = 651;
+name = typoAscender;
+value = 1345;
+},
+{
+name = typoDescender;
+value = -653;
+},
+{
+name = typoLineGap;
+value = 0;
 },
 {
 name = winAscent;
 value = 1346;
+},
+{
+name = winDescent;
+value = 651;
 }
 );
 descender = -653;
@@ -540,12 +537,16 @@ ascender = 1345;
 capHeight = 710;
 customParameters = (
 {
-name = winDescent;
-value = 651;
+name = hheaAscender;
+value = 1345;
 },
 {
-name = winAscent;
-value = 1346;
+name = hheaDescender;
+value = -653;
+},
+{
+name = hheaLineGap;
+value = 0;
 },
 {
 name = typoAscender;
@@ -553,23 +554,19 @@ value = 1345;
 },
 {
 name = typoDescender;
-value = 653;
+value = -653;
 },
 {
 name = typoLineGap;
 value = 0;
 },
 {
-name = hheaAscender;
-value = 1345;
+name = winAscent;
+value = 1346;
 },
 {
-name = hheaLineGap;
-value = 0;
-},
-{
-name = hheaDescender;
-value = -653;
+name = winDescent;
+value = 651;
 }
 );
 descender = -653;
@@ -601,12 +598,16 @@ ascender = 1345;
 capHeight = 710;
 customParameters = (
 {
-name = winDescent;
-value = 651;
+name = hheaAscender;
+value = 1345;
 },
 {
-name = winAscent;
-value = 1346;
+name = hheaDescender;
+value = -653;
+},
+{
+name = hheaLineGap;
+value = 0;
 },
 {
 name = typoAscender;
@@ -614,23 +615,19 @@ value = 1345;
 },
 {
 name = typoDescender;
-value = 653;
+value = -653;
 },
 {
 name = typoLineGap;
 value = 0;
 },
 {
-name = hheaAscender;
-value = 1345;
+name = winAscent;
+value = 1346;
 },
 {
-name = hheaLineGap;
-value = 0;
-},
-{
-name = hheaDescender;
-value = -653;
+name = winDescent;
+value = 651;
 }
 );
 descender = -653;
@@ -107224,5 +107221,5 @@ arRoundThin = "87";
 };
 };
 versionMajor = 4;
-versionMinor = 4;
+versionMinor = 5;
 }
