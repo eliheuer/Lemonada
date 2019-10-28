@@ -1,5 +1,5 @@
 {
-.appVersion = "1264";
+.appVersion = "1270";
 DisplayStrings = (
 "/Cacute/Ccaron Ç/Ccircumflex/Cdotaccent/Gbreve/Gcircumflex/Gcommaaccent/Gdotaccent/IJ Í/Ibreve ÎÏ/Idotaccent/Idotbelow Ì/Ihookabove/Imacron/Iogonek/Itilde/Nacute/Ncaron/Ncommaaccent ÑÚ/Ubreve ÛÜ/Udotbelow Ù/Uhookabove/Uhorn/Uhornacute/Uhorndotbelow/Uhorngrave/Uhornhookabove/Uhorntilde/Uhungarumlaut/Umacron/Uogonek/Uring/Utilde/aeacute",
 "/kaf-ar.init/gaf-ar.init"
@@ -473,12 +473,20 @@ ascender = 1345;
 capHeight = 710;
 customParameters = (
 {
+name = winAscent;
+value = 1346;
+},
+{
+name = winDescent;
+value = 651;
+},
+{
 name = typoAscender;
 value = 1345;
 },
 {
 name = typoDescender;
-value = 653;
+value = -653;
 },
 {
 name = typoLineGap;
@@ -497,16 +505,17 @@ name = hheaLineGap;
 value = 0;
 },
 {
-name = winDescent;
-value = 651;
-},
-{
-name = winAscent;
-value = 1346;
-},
-{
 name = weightClass;
 value = 300;
+},
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+}
+);
 }
 );
 descender = -653;
@@ -545,12 +554,12 @@ ascender = 1345;
 capHeight = 710;
 customParameters = (
 {
-name = winDescent;
-value = 651;
-},
-{
 name = winAscent;
 value = 1346;
+},
+{
+name = winDescent;
+value = 651;
 },
 {
 name = typoAscender;
@@ -558,7 +567,7 @@ value = 1345;
 },
 {
 name = typoDescender;
-value = 653;
+value = -653;
 },
 {
 name = typoLineGap;
@@ -569,12 +578,25 @@ name = hheaAscender;
 value = 1345;
 },
 {
+name = hheaDescender;
+value = -653;
+},
+{
 name = hheaLineGap;
 value = 0;
 },
 {
-name = hheaDescender;
-value = -653;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 400;
+}
+);
+},
+{
+name = weightClass;
+value = 400;
 }
 );
 descender = -653;
@@ -606,12 +628,12 @@ ascender = 1345;
 capHeight = 710;
 customParameters = (
 {
-name = winDescent;
-value = 651;
-},
-{
 name = winAscent;
 value = 1346;
+},
+{
+name = winDescent;
+value = 651;
 },
 {
 name = typoAscender;
@@ -619,7 +641,7 @@ value = 1345;
 },
 {
 name = typoDescender;
-value = 653;
+value = -653;
 },
 {
 name = typoLineGap;
@@ -630,12 +652,21 @@ name = hheaAscender;
 value = 1345;
 },
 {
+name = hheaDescender;
+value = -653;
+},
+{
 name = hheaLineGap;
 value = 0;
 },
 {
-name = hheaDescender;
-value = -653;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 700;
+}
+);
 }
 );
 descender = -653;
@@ -107299,6 +107330,12 @@ name = Light;
 weightClass = Light;
 },
 {
+customParameters = (
+{
+name = "New Parameter";
+value = "New Value";
+}
+);
 interpolationWeight = 128;
 instanceInterpolations = {
 "CE369AAB-0FC9-4F25-BC24-38D80C2A37D0" = 1;
