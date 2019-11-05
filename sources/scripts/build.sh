@@ -40,7 +40,7 @@ else
 fi
 
 echo "[INFO] Autohinting with ttfautohint"
-if ttfautohint fonts/vf/$familyName-VF.ttf fonts/vf/$familyName-VF-FIX.ttf ; then
+if ttfautohint fonts/vf/$familyName-VF.ttf fonts/vf/$familyName-VF-FIX.ttf --stem-width-mode=nnn ; then
   echo "[INFO] Autohinting completed"
   echo "[INFO] Replacing unhinted fonts with hinted fonts"
   mv fonts/vf/$familyName-VF-FIX.ttf fonts/vf/$familyName-VF.ttf 
